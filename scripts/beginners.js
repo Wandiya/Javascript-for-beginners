@@ -191,3 +191,114 @@ console.log(students[0][2]); //output: Kate.
 
 // column data = [  0,0 = Alice, 0, 1 = 25, 0, 2 = Math, 1,0 = kate , 1,1 = 28, 1,2 = science,  etc
 */
+
+/*
+// Javascript class  on 6th June 2023.
+//  check array on MDN(frontend guys uses map and filter)
+
+// Array
+// using toString method
+
+// Example 1
+
+const color = ["red", "green", "blue", "purple"]; //
+console.log(color.toString());
+*/
+
+/*
+//join method
+const color = ["red", "green", "blue", "gold"];
+console.log(color.join("-")); //output: red-green-blue-gold.
+*/
+
+/*
+// stack method (last in first out(LIFO)) using push
+// Example 2
+// push means to add soemthing to a stack
+const color = ["red", "green", "blue", "gold"];
+color.push("white");
+console.log(color);
+*/
+
+/*
+// Example 2
+const color = [];
+color.push = ("red", "green", "blue", "gold");
+console.log(color);
+*/
+/*
+
+//  pop method ... is used to remove and return the last element from an array. It modifies the original array by removing the last element and returns the removed element.
+
+const color = [];
+color.push = ("red", "green", "blue", "gold");
+const removeColor = color.pop(); //
+console.log(color, removeColor); // output:
+*/
+
+/*
+
+// queue method follows the First-In-First-Out (FIFO) principle, meaning that the first element added is the first one to be removed.
+// unshift () add in front of the array
+
+const color = ["red", "green", "black", "gold"];
+color.unshift("plang", "kate", 29, 11);
+console.log(color);
+
+*/
+
+/*
+
+// shift method to remove the list item of the array
+
+const color = ["red", "blue", "black", "gold"];
+color.shift()
+color.unshift("plang", "kate", 29, 11);
+
+console.log(color);
+
+*/
+
+/*
+//rendering method
+//reversed()
+// example 1
+const color = ["red", "blue", "black", "gold"]
+console.log(color.reverse())
+*/
+/*
+// example 2
+const value = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+console.log(value.reverse);
+*/
+/*
+// sort() method
+const value = [1, 2, 3, 6, 7, 6, 5, 4, 9];
+console.log(value.sort());
+*/
+
+/*
+const value = [c, b, a, z, d, r, s, m, n];
+console.log(value.sort());
+*/
+
+/*
+const color = ["red", "blue", "black", "gold"];
+console.log(color.sort());
+*/
+
+
+/*
+// compare method
+const value = [10, 2, 30, 1, 5, 3, 6, 7, 6, 5, 4, 5, 6];
+console.log(value.sort(compare));
+
+function compare(val1, val2) {
+    return val1 - val2
+}
+*/
+
+// manipulation method
+const color = ["red", "blue", "black", "gold"];
+const totalColor = color.concat(["pink", "yellow"])
+console.log(totalColor)
