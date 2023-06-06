@@ -180,7 +180,7 @@ console.log(numbers.indexOf(10)); //output: false or negative result
 */
 
 // Example 4: storing and manipulating tabular data. Each row repsents an item and each column represents a property or attribute of that item.
-
+/*
 let students = [
     ["Alice", 25, "Math"], //i.e. Alice = 0 , 25 = 1 , Math = 2. rows data
     ["Kate", 28, "science"],
@@ -190,3 +190,4 @@ let students = [
 console.log(students[0][2]); //output: Kate.
 
 // column data = [  0,0 = Alice, 0, 1 = 25, 0, 2 = Math, 1,0 = kate , 1,1 = 28, 1,2 = science,  etc
+*/
