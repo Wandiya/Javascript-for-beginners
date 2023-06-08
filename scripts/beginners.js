@@ -336,6 +336,8 @@ console.log(typeof user);
 console.log(user['age']);
 */
 
+
+/*
 // Example 2
 // Add method 
 let user = {
@@ -352,7 +354,126 @@ let user = {
     }
 
 };
-user.login();
+user.login(); // its a method
 user.logout();
 
 console.log(user);
+
+*/
+
+/*
+// This method
+// Example
+let user = {
+    name: "James",
+    age: 30,
+    email: "jameswandiya@gmail.com",
+    location: "Jos",
+    blogs: ["night life in Jos wihtout Javascript", "Tech life sucks"],
+    login: function() {
+        console.log('the user is login')
+    },
+    logout: function() {
+        console.log('the user is logout')
+    },
+    logBlogs: function() {
+        console.log(this.logBlogs);
+        console.log('this user has written the following blogs');
+        this.blogs.forEach(blogs => {
+            console.log(blogs)
+        })
+    }
+};
+user.logBlogs();
+// console.log(this) // Accessing the global variables
+//when a method is called on an object, the this keyword within that method refers to the object on which the method is being called. This is known as the implicit binding of this.
+
+*/
+/*
+//Array of objects
+let blogs = [{
+        title: 'night life in Jos without Js',
+        like: 30
+    },
+    {
+        title: 'night life',
+        like: 200
+    },
+];
+console.log(blogs);
+*/
+
+/*
+// Example of array with two objects
+let user = {
+    name: "James",
+    age: 30,
+    email: "jameswandiya@gmail.com",
+    location: "Jos",
+    blogs: [{
+            title: 'night life in Jos without Js',
+            like: 30
+        },
+        {
+            title: 'night life',
+            like: 200
+        },
+    ],
+    login: function() {
+        console.log('the user is login')
+    },
+    logout: function() {
+        console.log('the user is logout')
+    },
+    logBlogs: function() {
+        console.log(this.logBlogs);
+        console.log('this user has written the following blogs');
+        this.blogs.forEach(blogs => {
+            console.log(blogs.title, blogs.like)
+        })
+    }
+};
+user.logBlogs();
+*/
+
+
+/*
+//Math object 
+
+console.log(Math.PI);
+console.log(Math.E);
+
+const area = 7.9;
+console.log(Math.round(area));
+console.log(Math.floor(area));
+console.log(Math.ceil(area));
+console.log(Math.trunc(area));
+console.log(Math.log(area));
+
+const random = Math.random();
+console.log(Math.random);
+console.log(Math.random(random * 100));
+*/
+
+/*
+// Primitive and reference 
+
+// primitive this are stored in stack
+//reference are stored in heap
+// to concatenate using template String and a back tick
+let scoreOne = 10;
+let scoreTwo = 20;
+console.log(`scoreOne:${scoreOne}`, `scoreTwo:${ scoreTwo }`);
+console.log(`my name is ${scoreOne} and `, `has a score:${scoreTwo}`);
+
+
+
+//refernce 
+let userOne = { name: "James", age: "30" }
+let userTwo = userOne;
+console.log(userOne, userTwo);
+
+userTwo.age = 50;
+console.log(userOne, userTwo);
+
+*/
