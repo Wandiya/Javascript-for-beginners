@@ -145,7 +145,7 @@ while (i < 10) {
 }
 */
 
-
+// ****************************************************
 // personal study on Array   6th June 2023.
 // Example 1
 /*
@@ -193,6 +193,8 @@ console.log(students[0][2]); //output: Kate.
 */
 
 /*
+
+****************************************************
 // Javascript class  on 6th June 2023.
 //  check array on MDN(frontend guys uses map and filter)
 
@@ -296,9 +298,61 @@ console.log(value.sort(compare));
 function compare(val1, val2) {
     return val1 - val2
 }
-*/
 
 // manipulation method
 const color = ["red", "blue", "black", "gold"];
 const totalColor = color.concat(["pink", "yellow"])
 console.log(totalColor)
+*/
+
+// *******************************************
+// object and function class on June 8th, 2023.
+//Object
+/*
+// Example 1
+let user = {
+    name: "James",
+    age: 30,
+    email: "jameswandiya@gmail.com",
+    location: "Jos",
+    blogs: ["night life in Jos wihtout Javascript", "Tech life sucks"]
+};
+console.log(user);
+
+//using Dot Notation
+// console.log(user.name);
+console.log(user.age);
+user.age = 50;
+user.name = "Tunde";
+console.log(user.age);
+console.log(user.name);
+
+// Bracket Notation
+console.log(user['email']);
+user['name'] = "Tunde";
+user['age'] = 10;
+console.log(user['name']);
+console.log(typeof user);
+console.log(user['age']);
+*/
+
+// Example 2
+// Add method 
+let user = {
+    name: "James",
+    age: 30,
+    email: "jameswandiya@gmail.com",
+    location: "Jos",
+    blogs: ["night life in Jos wihtout Javascript", "Tech life sucks"],
+    login: function() {
+        console.log('the user is login')
+    },
+    logout: function() {
+        console.log('the user is logout')
+    }
+
+};
+user.login();
+user.logout();
+
+console.log(user);
