@@ -456,12 +456,14 @@ console.log(Math.random(random * 100));
 */
 
 /*
+
+class on 13 June, 2023. 
 *** primitive values are classified as data types that are(6): Number, string, boolean, null, undefined and symbol. 
 ***Reference values are classified  as object types(5). that are: object, array, function, Date.
 // Primitive and reference 
 
-// primitive this are stored in stack (memory)
-//reference are stored in heap(address of the value)
+// primitive this are stored in stack (fixed in memory and stored by value)
+//reference are stored in heap(memory address of the value)
 // to concatenate using template String and a back tick
 let scoreOne = 10;
 let scoreTwo = 20;
