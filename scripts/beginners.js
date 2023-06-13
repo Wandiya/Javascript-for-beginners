@@ -494,3 +494,27 @@ console.log(x);
 */
 
 // example of reference
+/*
+const person = {
+    name: 'James',
+    age: '30',
+};
+// creating a refernce to the object
+const personTwo = person;
+// modifying the referenced object
+personTwo.age = 50;
+personTwo.name = 'Chiding';
+console.log(person.age);
+console.log(personTwo.age);
+console.log(person);
+*/
+let p = {
+    value: 40,
+    // name: 'John',
+
+}
+console.log(p);
+let x = p;
+p.value = 100;
+console.log(p.value);
+console.log(p);
