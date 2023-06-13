@@ -483,7 +483,15 @@ console.log(userOne, userTwo);
 */
 
 /*
-// example of primitive 
+// Example of primitive 
+//Example 1
+let num1 = 10;
+let num2 = num1; //copying the value of num1 to num2
+num2 = 20; //modifying the value of num2 does not affect num1
+conole.log(num1); // ouput: 10
+console.log(num2); //output: 20
+
+//Example 2
 let x = 10;
 let y = x;
 x = 30;
@@ -493,7 +501,8 @@ console.log(y);
 console.log(x);
 */
 
-// example of reference
+// Example of reference
+//Example 1
 /*
 const person = {
     name: 'James',
@@ -508,6 +517,8 @@ console.log(person.age);
 console.log(personTwo.age);
 console.log(person);
 */
+/*
+//Example 2
 let p = {
     value: 40,
     // name: 'John',
@@ -518,3 +529,4 @@ let x = p;
 p.value = 100;
 console.log(p.value);
 console.log(p);
+*/
