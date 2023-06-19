@@ -530,3 +530,90 @@ p.value = 100;
 console.log(p.value);
 console.log(p);
 */
+// Function 19th June 2023.
+// function declaration
+// const speak = function() {
+//     console.log("Good day")
+// }
+// sepak()
+/*
+//  argument and parameters
+// Example 1
+const talk = function(name) {
+    console.log(`good day ${name}`)
+}
+talk("James")
+
+
+// Example 2
+const talk = function(job) {
+    console.log(`I am a web ${job}`)
+}
+talk("dev")
+*/
+/*
+// To Pass a value
+// Example 1
+const speak = function(name = "James", time = "night") {
+    console.log(`good ${ time } ${ name }`);
+}
+speak('King', 'day')
+*/
+/*
+//  Returning value
+// Example 1
+const calArea = function(radius) {
+    let area = 3.14 * radius;
+    return area;
+}
+const area = calArea(5)
+console.log("area is:", area)
+*/
+/*
+// Same thing in another way Example 2
+const calArea = function(radius) {
+    return 3.14 * radius;
+}
+const area = calArea(5)
+console.log(area)
+*/
+/*
+// Arrow function(=>) 
+const calArea = (radius) => {
+    return 3.14 * radius;
+}
+const area = calArea(5)
+console.log(area);
+*/
+/*
+// one argument does not require paranthesis
+const greet = (name) => console.log("Hello," + name + "!");
+greet("James");
+*/
+/*
+const calArea = (radius) => 3.14 * radius;
+const area = calArea(5);
+console.log(`area is: {$area}`);
+*/
+/*
+// Example 1
+const bill = function(products, tax) {
+    let total = 0;
+    for (let i = 0; i < products.length; i++) {
+        total += products[i] + products[i] * tax;
+    }
+    return total
+}
+console.log(bill([10, 2, 65], 0.6))
+*/
+
+// arrow function method
+const bill = (products, tax) => {
+    let total = 0;
+    for (let i = 0; i < products.length; i++) {
+        total += products[i] + products[i] * tax;
+    }
+    return total;
+};
+
+console.log(bill([10, 2, 65], 0.2)); // Output: 92.4
