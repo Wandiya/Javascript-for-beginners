@@ -606,6 +606,8 @@ const bill = function(products, tax) {
 }
 console.log(bill([10, 2, 65], 0.6))
 */
+
+/*
 // Class work
 // arrow function method
 const bill = (products, tax) => {
@@ -617,3 +619,186 @@ const bill = (products, tax) => {
 };
 
 console.log(bill([10, 12], 0.2)); //10 * 0.2 + 10 // Output: 92.4
+*/
+/*
+// call back function  20th June 2023.
+const myFunc = (callbackFunction) => {
+    let value = 50;
+    callbackFunction(value);
+};
+myFunc(function(value) {
+    console.log(value)
+})
+*/
+/*
+// using arrow function
+const myFunc = (callbackFunction) => {
+    let value = 50;
+    callbackFunction(value);
+};
+myFunc((value) => {
+    console.log(value);
+})
+*/
+/*
+//ForEach function(hof)
+let people = ["James", "Kate", "Plangel", "Ahmad"];
+people.forEach(function(person) {
+    console.log(person)
+})
+*/
+/*
+//  using arrow function
+let people = ["James", "Kate", "Plangel", "Ahmad"];
+people.forEach(person => {
+    console.log(person);
+})
+*/
+/*
+let people = ["James", "kernel", "plang", "Ahmad"];
+const logPerson = (person, index) => {
+    console.log(`${index}-Hello ${person}`)
+};
+people.forEach(logPerson)
+*/
+//Higher order function(HOF) consist of filter, sort, map, reduced and forEach
+
+const companies = [
+        { name: "company one", category: "finance", start: 2000, end: 2019 },
+        { name: "company two", category: "retail", start: 1985, end: 2010 },
+        { name: "company three", category: "finance", start: 1993, end: 2033 },
+        { name: "company four", category: "retail", start: 2000, end: 2015 },
+        { name: "company five", category: "finance", start: 1997, end: 2016 },
+        { name: "company six", category: "finance", start: 2000, end: 2012 },
+        { name: "company seven", category: "tech", start: 2000, end: 2012 },
+        { name: "company eight", category: "tech", start: 2000, end: 2013 },
+    ]
+    /*
+    const ages = [12, 4, 21, 14, 25, 61, 54, 51, 49, 44];
+    //forEach
+    companies.forEach(function(company) {
+            console.log(company)
+        })
+        //filter
+    let canDrink = [];
+    for (let i = 0; i < ages.length; i++) {
+        if (ages[i] >= 21) {
+            canDrink.push(ages[i])
+        }
+    }
+    console.log(canDrink);
+    */
+    /*
+    // shorter example
+const ages = [12, 4, 21, 14, 25, 18, 54, 51, 49, 44];
+const canDrink = ages.filter(function(age) {
+    if (age >= 21) {
+        return true;
+    }
+});
+console.log(canDrink);
+*/
+    /*
+    const ages = [18, 25, 11, 30, 20, 22];
+
+    const canDrink = ages.filter(age => age >= 21);
+
+    console.log(canDrink);
+    */
+    /*
+const retailcompanies = companies.filter(function(company) {
+    if (company.category === "retail") {
+        return true;
+    }
+});
+console.log(retailcompanies);
+*/
+    /*
+    const retailCompanies = companies.filter(company => company.category === "retail");
+
+    console.log(retailCompanies);
+    */
+    /*
+    const financeCompanies = companies.filter(company => company.category === "finance");
+    console.log(financeCompanies);
+    */
+    /*
+    // company that lasted ten years
+    const tenYearCompanies = companies.filter(company => company.end - company.start >= 10);
+    console.log(tenYearCompanies);
+    */
+    /*
+    // map is used to recreate a new array from an existing array
+const companyNames = companies.map(company => company.category);
+console.log(companyNames);
+*/ // you can also check for name, category etc.
+    /*
+    const concateMap = companies.map(company => `${company.category}, ${company.name}`);
+
+    console.log(concateMap);
+    */
+    /*
+const concateMap = companies.map(company => company.end - company.start >= 10);
+console.log(concateMap);
+
+*/
+    /*
+    const ages = [16, 25, 36, 49, 64];
+    const ageMap = ages.map(ages => Math.sqrt(ages));
+    console.log(ageMap);
+    */
+    /*
+    const timeMap = ages.map(ages => (age * 2));
+    console.log(timeMap);
+    */
+    /*
+    // sort is used to sort elements in an list of arrays
+    const sortCompanies = companies.sort(function(a, b) {
+        if (a.start > b.start) {
+            return 1;
+        } else if (a.start < b.start) {
+            return -1;
+        } else {
+            return 0;
+        }
+    });
+
+    console.log(sortCompanies);
+    */
+
+/*
+    // using arrow function
+const sortCompanies = companies.sort((a, b) => {
+    if (a.start > b.start) {
+        return 1;
+    } else if (a.start < b.start) {
+        return -1;
+    } else {
+        return 0;
+    }
+});
+
+console.log(sortCompanies);
+*/
+// const ages = [21, 30, 42, 18, 25];
+
+// const agesSum = ages.reduce((total, age) => total + age, 0);
+
+// console.log(agesSum); // Output: 136
+/*
+let ageSum = 0;
+for (let i = 0; i < ages.length; i++) {
+    agesSum += ages[i];
+}
+console.log(agesSum); // Output:
+*/
+// combine method
+const combined = ages
+    .map(age => age * 2)
+    .filter(age => age => 40)
+    /*
+    const totalYears = companies.reduce {
+        total,
+        company) => total +
+    }
+    */
